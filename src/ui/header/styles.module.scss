@@ -8,9 +8,8 @@
   margin: 0;
   padding: 27px 60px;
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
   align-items: center;
-  gap: 33px;
 }
 
 .headerLink {
@@ -22,8 +21,59 @@
   font-weight: 500;
   line-height: 29.38px;
   text-decoration: none;
+
   &:hover {
     cursor: pointer;
     opacity: 0.7;
   }
+
+  &.signIn {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 2px;
+    color: var(--white-color);
+    background-color: var(--orange-color);
+    font-weight: 700;
+
+    &.active {
+      color: var(--black-color);
+      cursor: default;
+      border: none;
+      opacity: 0.5;
+    }
+  }
+
+  &.signUp {
+    color: var(--dark-color);
+    font-weight: 700;
+
+    &.active {
+      opacity: 1;
+      cursor: default;
+      border-bottom: 2px solid rgba(0, 0, 0, 1);
+    }
+  }
+
+  &.active {
+    opacity: 1;
+    cursor: default;
+    border-bottom: 2px solid rgba(0, 0, 0, 1);
+  }
+}
+
+.headerLinks {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 33px;
+}
+
+.headerSignContainer {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  gap: 33px;
 }
