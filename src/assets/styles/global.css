@@ -1,0 +1,19 @@
+@import './normalize.css';
+
+:root {
+  --black-color: rgba(0, 0, 0, 1);
+  --white-color: rgba(255, 255, 255, 1);
+  --dark-color: rgba(33, 36, 61, 1);
+  --dark-blue-color: rgba(20, 40, 80, 1);
+  --orange-color: rgba(255, 100, 100, 1);
+  --blue-color: rgba(0, 168, 204, 1);
+  --blue-slate-color: rgba(237, 247, 250, 1);
+  --slate-color: rgba(134, 149, 164, 1);
+}
+
+body {
+  font-family: var(--font-heebo);
+  background-color: var(--white-color);
+  min-height: 100vh;
+}
+

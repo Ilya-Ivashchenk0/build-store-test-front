@@ -1,0 +1,62 @@
+.promo {
+  margin: 158px auto 71px auto;
+  padding: 0;
+  min-width: 858px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.promoHeading {
+  margin: 0;
+  padding: 0;
+  max-width: 506px;
+  font-size: 44px;
+  font-weight: 700;
+  line-height: 60px;
+  white-space: pre-line;
+}
+
+.promoParagraph {
+  margin: 40px 0 47px 0;
+  padding: 0;
+  max-width: 497px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 23.5px;
+}
+
+.promoImg {
+  margin: 0;
+  padding: 0;
+  border: none;
+  border-radius: 50%;
+}
+
+.promoWrapper {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.promoButton {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 208px;
+  min-height: 47px;
+  background-color: var(--orange-color);
+  color: var(--white-color);
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 29.38px;
+  border: none;
+  border-radius: 2px;
+  &:hover {
+    cursor: pointer;
+    opacity: 0.7;
+  }
+}
