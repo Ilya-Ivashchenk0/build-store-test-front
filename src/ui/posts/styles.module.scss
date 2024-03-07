@@ -14,6 +14,8 @@
 }
 
 .postsHeadingWrapper {
+  margin: 0;
+  padding: 0;
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -21,6 +23,8 @@
 }
 
 .postsHeading {
+  margin: 0;
+  padding: 0;
   color: var(--dark-color);
   font-size: 22px;
   font-weight: 400;
@@ -28,6 +32,8 @@
 }
 
 .postsLink {
+  margin: 0;
+  padding: 0;
   color: var(--blue-color);
   text-decoration: none;
   font-size: 16px;
@@ -40,6 +46,8 @@
 }
 
 .postsPostWrapper {
+  margin: 0;
+  padding: 0;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -59,6 +67,8 @@
 }
 
 .postsPostTitle {
+  margin: 0;
+  padding: 0;
   color: var(--dark-color);
   font-size: 26px;
   font-weight: 700;
@@ -66,6 +76,8 @@
 }
 
 .postsPostInfo {
+  margin: 0;
+  padding: 0;
   color: var(--dark-color);
   font-size: 18px;
   font-weight: 400;
@@ -73,6 +85,8 @@
 }
 
 .postsPostSubtitle {
+  margin: 0;
+  padding: 0;
   color: var(--dark-color);
   font-size: 16px;
   font-weight: 400;
