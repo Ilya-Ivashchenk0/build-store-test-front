@@ -1,0 +1,54 @@
+.inputWrapper {
+  margin: 20px 0;
+  padding: 0;
+  position: relative;
+  width: 100%;
+  background-color: var(--white-color);
+}
+
+.inputLabel {
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 15px;
+  left: 20px;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 23.5px;
+  transition:
+    top 0.5s ease,
+    left 0.5s ease,
+    font-size 0.5s ease;
+
+  &.onFocus {
+    top: -25px;
+    left: 10px;
+    font-size: 14px;
+  }
+}
+
+.input {
+  margin: 0;
+  padding: 0 20px;
+  min-width: 85%;
+  min-height: 50px;
+  outline: none;
+  border: none;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 23.5px;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.inputError {
+  margin: 0;
+  padding: 0;
+  min-height: 25px;
+  color: var(--orange-color);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 23.5px;
+}
