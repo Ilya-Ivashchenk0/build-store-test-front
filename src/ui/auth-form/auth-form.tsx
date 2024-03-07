@@ -26,20 +26,20 @@ export const AuthForm: React.FC<authFormProps> = ({
         value={email}
         changeValue={changeEmail}
         errorValue={emailError}
-        name='email'
+        name="email"
       />
       <Input
         value={password}
         changeValue={changePassword}
         errorValue={passwordError}
-        name='password'
+        name="password"
       />
       <button
         className={cn(classes.authFormButton, {
           [classes.active]:
             !emailError && !passwordError && email !== '' && password !== ''
         })}
-        type='submit'
+        type="submit"
         disabled={
           !!emailError || !!passwordError || email === '' || password === ''
         }

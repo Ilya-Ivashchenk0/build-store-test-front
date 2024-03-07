@@ -1,9 +1,9 @@
 'use client'
 
-import { useState } from "react"
+import { useState } from 'react'
 import cn from 'classnames'
 import classes from './styles.module.scss'
-import { inputProps } from "./types"
+import { inputProps } from './types'
 
 export const Input: React.FC<inputProps> = ({
   value,
@@ -31,7 +31,7 @@ export const Input: React.FC<inputProps> = ({
           type={name}
           id={name}
           value={value}
-          autoComplete='off'
+          autoComplete="off"
           onChange={changeValue}
           onFocus={() => setFocus(true)}
           onBlur={() => setFocus(false)}

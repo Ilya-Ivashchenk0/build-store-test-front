@@ -3,7 +3,12 @@ import { promoProps } from './types'
 import cn from 'classnames'
 import classes from './styles.module.scss'
 
-export const Promo: React.FC<promoProps> = ({ heading, paragraph, imgSrc, buttonText }) => {
+export const Promo: React.FC<promoProps> = ({
+  heading,
+  paragraph,
+  imgSrc,
+  buttonText
+}) => {
   return (
     <section className={cn(classes.promo)}>
       <div className={cn(classes.promoWrapper)}>
@@ -11,7 +16,12 @@ export const Promo: React.FC<promoProps> = ({ heading, paragraph, imgSrc, button
         <p className={cn(classes.promoParagraph)}>{paragraph}</p>
         <button className={cn(classes.promoButton)}>{buttonText}</button>
       </div>
-      <Image priority className={cn(classes.promoImg)} src={imgSrc} alt={heading} />
+      <Image
+        priority
+        className={cn(classes.promoImg)}
+        src={imgSrc}
+        alt={heading}
+      />
     </section>
   )
 }

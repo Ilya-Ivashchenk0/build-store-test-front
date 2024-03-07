@@ -6,7 +6,7 @@ import cn from 'classnames'
 import { AuthForm } from '@/ui/auth-form/auth-form'
 import { signSchema } from '@/utils/validation'
 import { useDispatch } from 'react-redux'
-import { logIn } from "@/redux/features/auth-slice"
+import { logIn } from '@/redux/features/auth-slice'
 import { login } from '@/api/authApi'
 import { toast } from 'react-toastify'
 import { useRouter } from 'next/navigation'
@@ -25,13 +25,13 @@ const Signin: React.FC = () => {
     e.preventDefault()
 
     login(email, password)
-      .then((token) => {
+      .then(token => {
         console.log(token)
         dispatch(logIn({ token, email }))
         toast.success('Signin was successful!')
         router.push('/')
       })
-      .catch((err) => {
+      .catch(err => {
         console.log(err)
         toast.error('Login failed!')
       })
@@ -72,8 +72,8 @@ const Signin: React.FC = () => {
         password={password}
         changePassword={handleChangePassword}
         passwordError={passwordError}
-        formName='Sign-in'
-        buttonText='Continue'
+        formName="Sign-in"
+        buttonText="Continue"
         submit={handleSubmit}
       />
     </main>

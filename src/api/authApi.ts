@@ -1,4 +1,4 @@
-import { consts } from "@/utils/consts"
+import { consts } from '@/utils/consts'
 
 function getResponseData(res: Response) {
   if (!res.ok) {
@@ -15,7 +15,7 @@ export const register = (email: string, password: string) => {
       'Content-Type': 'application/json'
     },
     body: JSON.stringify({ email, password })
-  }).then((res) => {
+  }).then(res => {
     return getResponseData(res)
   })
 }
@@ -27,7 +27,7 @@ export const login = (email: string, password: string) => {
       'Content-Type': 'application/json'
     },
     body: JSON.stringify({ password, email })
-  }).then((res) => {
+  }).then(res => {
     return getResponseData(res)
   })
 }

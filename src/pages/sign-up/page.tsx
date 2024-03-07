@@ -21,16 +21,16 @@ const Signup: React.FC = () => {
     e.preventDefault()
 
     register(email, password)
-      .then((message) => {
+      .then(message => {
         console.log(message)
         toast.success(message.message)
         router.push('/sign-in')
       })
-      .catch((err) => toast.error(err))
+      .catch(err => toast.error(err))
   }
 
   const handleChangeEmail = (e: React.ChangeEvent<HTMLInputElement>) => {
-    const newEmail = e.target.value;
+    const newEmail = e.target.value
     setEmail(newEmail)
 
     const result = signSchema.safeParse({ email: newEmail, password })
@@ -43,8 +43,8 @@ const Signup: React.FC = () => {
   }
 
   const handleChangePassword = (e: React.ChangeEvent<HTMLInputElement>) => {
-    const newPassword = e.target.value;
-    setPassword(newPassword);
+    const newPassword = e.target.value
+    setPassword(newPassword)
 
     const result = signSchema.safeParse({ email, password: newPassword })
     if (!result.success) {
@@ -64,8 +64,8 @@ const Signup: React.FC = () => {
         password={password}
         changePassword={handleChangePassword}
         passwordError={passwordError}
-        formName='Sign-Un'
-        buttonText='Continue'
+        formName="Sign-Un"
+        buttonText="Continue"
         submit={handleSubmit}
       />
     </main>

@@ -1,36 +1,25 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+Для разработки и запуска использовал node - 18.19.0
 
-## Getting Started
+# build-store-test-front
+Тестовое задание выполнено на фреймворке Next.js.
+В проекте используются:
+- для стилизации: scss modules и библиотека classnames для удобной работы с именованием классов
+- для валидации: zod
+- для уведомлений: react-toastify
+- стейт менеджер: redux
 
-First, run the development server:
+## Ссылки на репозитории
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Backend https://github.com/Ilya-Ivashchenk0/build-store-test-server
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Frontend https://github.com/Ilya-Ivashchenk0/build-store-test-front
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Ссылка на макет
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+https://www.figma.com/file/u96UjK2Kzo2bk0PhVdL5xr/John-%2B?type=design&node-id=0-1&mode=design&t=9HKcEn7zMmKpkkCR-0
 
-## Learn More
+## Ссылки на проект
 
-To learn more about Next.js, take a look at the following resources:
+Backend https://api.build-store-test.test-tasks.ru
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Frontend https://build-store-test.test-tasks.ru

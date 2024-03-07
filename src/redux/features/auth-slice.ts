@@ -1,5 +1,5 @@
-import { createSlice } from "@reduxjs/toolkit"
-import { AuthState } from "../types"
+import { createSlice } from '@reduxjs/toolkit'
+import { AuthState } from '../types'
 
 const initialState: AuthState = {
   token: null,
@@ -12,14 +12,15 @@ export const auth = createSlice({
   initialState,
   reducers: {
     logIn: (state, action) => {
-      const { token, email} = action.payload
+      const { token, email } = action.payload
       if (token) {
         state.email = email
         state.token = token
         state.isLoggedIn = true
       }
     },
-    logOut: (state) => {
+    logOut: state => {
+      state.email = null
       state.token = null
       state.isLoggedIn = false
     }
