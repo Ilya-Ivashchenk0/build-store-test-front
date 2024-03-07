@@ -5,8 +5,13 @@ import classes from './styles.module.scss'
 import cn from 'classnames'
 import { AuthForm } from '@/ui/auth-form/auth-form'
 import { signSchema } from '@/utils/validation'
+import { register } from '@/api/authApi'
+import { toast } from 'react-toastify'
+import { useRouter } from 'next/navigation'
 
 const Signup: React.FC = () => {
+  const router = useRouter()
+
   const [email, setEmail] = useState<string>('')
   const [password, setPassword] = useState<string>('')
   const [emailError, setEmailError] = useState<string>('')
@@ -15,6 +20,13 @@ const Signup: React.FC = () => {
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>): void => {
     e.preventDefault()
 
+    register(email, password)
+      .then((message) => {
+        console.log(message)
+        toast.success(message.message)
+        router.push('/sign-in')
+      })
+      .catch((err) => toast.error(err))
   }
 
   const handleChangeEmail = (e: React.ChangeEvent<HTMLInputElement>) => {
