@@ -26,9 +26,9 @@ const RootLayout: React.FC<React.PropsWithChildren> = ({ children }) => {
   ]
 
   return (
-    <ReduxProvider>
-      <html lang="en" className={`${Font.variable}`}>
-        <body>
+    <html lang="en" className={`${Font.variable}`}>
+      <body>
+        <ReduxProvider>
           <ToastContainer
             position="top-center"
             autoClose={5000}
@@ -46,9 +46,9 @@ const RootLayout: React.FC<React.PropsWithChildren> = ({ children }) => {
             text="Copyright ©2020 All rights reserved"
             links={footerLinks}
           />
-        </body>
-      </html>
-    </ReduxProvider>
+        </ReduxProvider>
+      </body>
+    </html>
   )
 }
 
