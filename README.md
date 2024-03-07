@@ -27,3 +27,7 @@ https://www.figma.com/file/u96UjK2Kzo2bk0PhVdL5xr/John-%2B?type=design&node-id=0
 Backend https://api.build-store-test.test-tasks.ru
 
 Frontend https://build-store-test.test-tasks.ru
+
+Оценка производительности Lighthouse:
+![image](https://github.com/Ilya-Ivashchenk0/build-store-test-front/assets/120082609/a947afc8-c0df-48a4-8093-568fa75528c8)
+
