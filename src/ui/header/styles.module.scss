@@ -8,57 +8,23 @@
   margin: 0;
   padding: 23px 60px;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
 }
 
-.headerLink {
+@media screen and (min-width: 375px) and (max-width: 899px) {
+  .headerWrapper {
+    padding: 20px 18px 12px 18px;
+    justify-content: flex-end;
+    align-items: center;
+  }
+}
+
+.headerNavigate {
   margin: 0;
   padding: 0;
-  color: var(--black-color);
-  text-align: right;
-  font-size: 20px;
-  font-weight: 700;
-  line-height: 29.38px;
-  text-decoration: none;
-
-  &:hover {
-    cursor: pointer;
-    opacity: 0.7;
-  }
-
-  &.signIn {
-    padding: 5px 10px;
-    border: none;
-    border-radius: 2px;
-    color: var(--white-color);
-    background-color: var(--orange-color);
-    font-weight: 700;
-
-    &.active {
-      color: var(--black-color);
-      cursor: default;
-      border: none;
-      opacity: 0.5;
-    }
-  }
-
-  &.signUp {
-    color: var(--dark-color);
-    font-weight: 700;
-
-    &.active {
-      opacity: 1;
-      cursor: default;
-      border-bottom: 2px solid rgba(0, 0, 0, 1);
-    }
-  }
-
-  &.active {
-    opacity: 1;
-    cursor: default;
-    border-bottom: 2px solid rgba(0, 0, 0, 1);
-  }
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .headerLinks {
@@ -70,6 +36,12 @@
   gap: 33px;
 }
 
+@media screen and (min-width: 375px) and (max-width: 899px) {
+  .headerLinks {
+    display: none;
+  }
+}
+
 .headerSignContainer {
   margin: 0;
   padding: 0;
@@ -78,27 +50,31 @@
   gap: 33px;
 }
 
-.headerEmail {
-  margin: 0;
-  padding: 0;
-  color: var(--orange-color);
-  font-size: 20px;
-  font-weight: 500;
-  line-height: 29.38px;
+@media screen and (min-width: 375px) and (max-width: 899px) {
+  .headerSignContainer {
+    display: none;
+  }
 }
 
-.headerLoguotButton {
+.headerBurger {
   margin: 0;
-  padding: 5px 15px;
-  background-color: var(--dark-color);
-  color: var(--white-color);
-  font-size: 20px;
-  font-weight: 500;
-  line-height: 29.38px;
+  padding: 0;
+  width: 30px;
+  height: 30px;
   border: none;
-  border-radius: 4px;
+  background-color: transparent;
+  background-image: url('../../assets/images/icons/menu.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
   &:hover {
     cursor: pointer;
     opacity: 0.7;
+  }
+}
+
+@media screen and (min-width: 899px) {
+  .headerBurger {
+    display: none;
   }
 }

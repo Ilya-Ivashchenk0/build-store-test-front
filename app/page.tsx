@@ -1,7 +1,7 @@
 import classes from './styles.module.scss'
 import cn from 'classnames'
 import { Promo } from '@/ui/promo'
-import { Posts } from '@/ui/posts/posts'
+import { Posts } from '@/ui/posts'
 import promoImg from '@/assets/images/promoImage.png'
 import { Works } from '@/ui/works'
 import rect1 from '@/assets/images/Rectangle1.png'
