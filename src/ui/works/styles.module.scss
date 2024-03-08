@@ -16,13 +16,20 @@
   line-height: 60px;
 }
 
+.worksWrapper {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
 .worksWork {
   margin: 0;
-  padding: 31px 0 15px 0;
+  padding: 15px 0 13px 0;
   display: flex;
-  align-items: center;
-  border-bottom: 1px solid rgba(224, 224, 224, 1);
-  gap: 18px;
+  border-bottom: 2px solid rgba(224, 224, 224, 1);
+  gap: 17px;
 }
 
 .worksWorkWrapper {
@@ -34,10 +41,9 @@
 }
 
 .worksWorkImage {
-  margin: 0;
+  margin: 8px 0 0 0;
   padding: 0;
   max-width: 246px;
-  max-height: 180px;
   border: none;
   border-radius: 6px;
 }
@@ -48,11 +54,11 @@
   color: var(--dark-color);
   font-size: 30px;
   font-weight: 700;
-  line-height: 44.06px;
+  line-height: 1.2;
 }
 
 .worksWorkInfoWrapper {
-  margin: 9px 0 32px 0;
+  margin: 22px 0 20px 0;
   padding: 0;
   display: flex;
   align-items: center;
@@ -87,6 +93,7 @@
 .worksWorkSubtitle {
   margin: 0;
   padding: 0;
+  max-width: 95%;
   color: var(--dark-color);
   font-size: 16px;
   font-weight: 400;

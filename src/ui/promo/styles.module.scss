@@ -1,13 +1,13 @@
 .promo {
-  margin: 131px auto 71px auto;
+  margin: 125px auto 71px auto;
   padding: 0;
-  min-width: 858px;
+  min-width: 854px;
   display: flex;
   justify-content: space-between;
 }
 
 .promoHeading {
-  margin: 0;
+  margin: 18px 0 0 0;
   padding: 0;
   max-width: 506px;
   color: var(--dark-color);
@@ -18,7 +18,7 @@
 }
 
 .promoParagraph {
-  margin: 40px 0 38px 0;
+  margin: 27px 0 32px 0;
   padding: 0;
   max-width: 497px;
   font-size: 16px;

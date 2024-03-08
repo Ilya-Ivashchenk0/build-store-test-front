@@ -7,7 +7,8 @@ export const Works: React.FC<worksProps> = ({ heading, works }) => {
   return (
     <section className={cn(classes.works)}>
       <h3 className={cn(classes.worksHeading)}>{heading}</h3>
-      {works &&
+      <div className={cn(classes.worksWrapper)}>
+        {works &&
         works.map((work, index) => (
           <div className={cn(classes.worksWork)} key={index}>
             <Image
@@ -28,6 +29,7 @@ export const Works: React.FC<worksProps> = ({ heading, works }) => {
             </div>
           </div>
         ))}
+      </div>
     </section>
   )
 }

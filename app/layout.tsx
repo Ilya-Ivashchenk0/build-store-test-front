@@ -1,3 +1,4 @@
+import '@/assets/styles/normalize.css'
 import '@/assets/styles/global.css'
 import { Font } from '@/assets/fonts/fonts'
 import 'react-toastify/dist/ReactToastify.css'
