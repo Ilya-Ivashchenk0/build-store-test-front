@@ -11,6 +11,13 @@
   align-items: center;
 }
 
+@media screen and (min-width: 375px) and (max-width: 899px) {
+  .authForm {
+    margin: 30px 0 0 0;
+    min-width: 260px;
+  }
+}
+
 .authFormHeading {
   margin: 0;
   padding: 0;

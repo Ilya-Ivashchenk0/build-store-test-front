@@ -6,7 +6,7 @@
 }
 
 .postsWrapper {
-  margin: 5px auto 32px auto;
+  margin: 3px auto 38px auto;
   max-width: 858px;
   display: flex;
   flex-direction: column;
@@ -22,6 +22,12 @@
   align-items: center;
 }
 
+@media screen and (min-width: 375px) and (max-width: 899px) {
+  .postsHeadingWrapper {
+    justify-content: center;
+  }
+}
+
 .postsHeading {
   margin: 0;
   padding: 0;
@@ -29,6 +35,12 @@
   font-size: 22px;
   font-weight: 400;
   line-height: 60px;
+}
+
+@media screen and (min-width: 375px) and (max-width: 899px) {
+  .postsHeading {
+    font-size: 18px;
+  }
 }
 
 .postsLink {
@@ -45,6 +57,12 @@
   }
 }
 
+@media screen and (min-width: 375px) and (max-width: 899px) {
+  .postsLink {
+    display: none;
+  }
+}
+
 .postsPostWrapper {
   margin: 0;
   padding: 0;
@@ -52,6 +70,14 @@
   display: flex;
   justify-content: center;
   gap: 20px;
+}
+
+@media screen and (min-width: 375px) and (max-width: 899px) {
+  .postsPostWrapper {
+    flex-direction: column;
+    align-items: center;
+    gap: 17px;
+  }
 }
 
 .postsPost {
@@ -66,6 +92,13 @@
   box-shadow: 0px 4px 10px 0px rgba(187, 225, 250, 0.25);
 }
 
+@media screen and (min-width: 375px) and (max-width: 899px) {
+  .postsPost {
+    max-width: 316px;
+    padding: 10px 19px 20px 19px;
+  }
+}
+
 .postsPostTitle {
   margin: 0;
   padding: 0;
@@ -73,6 +106,13 @@
   font-size: 26px;
   font-weight: 700;
   line-height: 38.19px;
+}
+
+@media screen and (min-width: 375px) and (max-width: 899px) {
+  .postsPostTitle {
+    font-size: 22px;
+    line-height: 30px;
+  }
 }
 
 .postsPostInfoWrapper {
@@ -86,10 +126,24 @@
   line-height: 26.44px;
 }
 
+@media screen and (min-width: 375px) and (max-width: 899px) {
+  .postsPostInfoWrapper {
+    font-size: 16px;
+    line-height: 23.5px;
+    margin: 12px 0 19px 0;
+  }
+}
+
 .postsPostDate {
   margin: 0;
   padding: 0;
   max-height: 21px;
+}
+
+@media screen and (min-width: 375px) and (max-width: 899px) {
+  .postsPostDate {
+    max-height: 24px;
+  }
 }
 
 .postsPostInfo {
@@ -97,6 +151,15 @@
   padding: 0 0 0 24px;
   max-height: 21px;
   border-left: 1.5px solid black;
+}
+
+@media screen and (min-width: 375px) and (max-width: 899px) {
+  .postsPostInfo {
+    margin: 0 0 0 24px;
+    padding: 0 0 0 24px;
+    max-height: 24px;
+    border-left: 2px solid black;
+  }
 }
 
 .postsPostSubtitle {
@@ -107,4 +170,12 @@
   font-size: 16px;
   font-weight: 400;
   line-height: 23.5px;
+}
+
+@media screen and (min-width: 375px) and (max-width: 899px) {
+  .postsPostSubtitle {
+    margin: 0;
+    max-width: 99.5%;
+    line-height: 24px;
+  }
 }
