@@ -14,9 +14,9 @@ import { ToastContainer } from 'react-toastify'
 const RootLayout: React.FC<React.PropsWithChildren> = ({ children }) => {
   const headerLinks = [
     { text: 'Home', href: '/' },
-    { text: 'Works', href: '/' },
-    { text: 'Blog', href: '/' },
-    { text: 'Contact', href: '/' }
+    { text: 'Works', href: '' },
+    { text: 'Blog', href: '' },
+    { text: 'Contact', href: '' }
   ]
 
   const footerLinks = [

@@ -8,7 +8,7 @@ export const Posts: React.FC<postsProps> = ({ heading, link, posts }) => {
     <section className={cn(classes.posts)}>
       <div className={cn(classes.postsWrapper)}>
         <div className={cn(classes.postsHeadingWrapper)}>
-          <h3 className={cn(classes.postsHeading)}>{heading}</h3>
+          <h2 className={cn(classes.postsHeading)}>{heading}</h2>
           <Link className={cn(classes.postsLink)} href={link.href}>
             {link.text}
           </Link>

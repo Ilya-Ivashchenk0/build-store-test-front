@@ -6,7 +6,7 @@ import Image from 'next/image'
 export const Works: React.FC<worksProps> = ({ heading, works }) => {
   return (
     <section className={cn(classes.works)}>
-      <h3 className={cn(classes.worksHeading)}>{heading}</h3>
+      <h2 className={cn(classes.worksHeading)}>{heading}</h2>
       <div className={cn(classes.worksWrapper)}>
         {works &&
           works.map((work, index) => (
