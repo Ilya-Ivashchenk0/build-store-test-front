@@ -1,6 +1,6 @@
 import cn from 'classnames'
 import classes from './styles.module.scss'
-import { userInfoProps } from "./types"
+import { userInfoProps } from './types'
 
 export const UserInfo: React.FC<userInfoProps> = ({ email, logout }) => {
   return (

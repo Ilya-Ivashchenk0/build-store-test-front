@@ -40,22 +40,22 @@ const Home: React.FC = () => {
       subtitle:
         'Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.'
     },
-    // {
-    //   img: rect2,
-    //   title: 'Vibrant Portraits of 2020',
-    //   year: 2018,
-    //   description: 'Illustration',
-    //   subtitle:
-    //     'Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.'
-    // },
-    // {
-    //   img: rect3,
-    //   title: '36 Days of Malayalam type',
-    //   year: 2018,
-    //   description: 'Typography',
-    //   subtitle:
-    //     'Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.'
-    // }
+    {
+      img: rect2,
+      title: 'Vibrant Portraits of 2020',
+      year: 2018,
+      description: 'Illustration',
+      subtitle:
+        'Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.'
+    },
+    {
+      img: rect3,
+      title: '36 Days of Malayalam type',
+      year: 2018,
+      description: 'Typography',
+      subtitle:
+        'Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.'
+    }
   ]
 
   return (

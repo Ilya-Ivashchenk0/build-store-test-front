@@ -20,7 +20,9 @@ export const Posts: React.FC<postsProps> = ({ heading, link, posts }) => {
                 <h4 className={cn(classes.postsPostTitle)}>{post.title}</h4>
                 <div className={cn(classes.postsPostInfoWrapper)}>
                   <p className={cn(classes.postsPostDate)}>{post.date}</p>
-                  <p className={cn(classes.postsPostInfo)}>{post.description}</p>
+                  <p className={cn(classes.postsPostInfo)}>
+                    {post.description}
+                  </p>
                 </div>
                 <p className={cn(classes.postsPostSubtitle)}>{post.subtitle}</p>
               </div>

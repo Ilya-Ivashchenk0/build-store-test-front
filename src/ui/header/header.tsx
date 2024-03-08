@@ -34,17 +34,29 @@ export const Header: React.FC<headerProps> = ({ links }) => {
       <div className={cn(classes.headerWrapper)}>
         <nav className={cn(classes.headerNavigate)}>
           <div className={cn(classes.headerSignContainer)}>
-            {userEmail ? <UserInfo email={userEmail} logout={logout} /> : <AuthLinks pathname={pathname} />}
+            {userEmail ? (
+              <UserInfo email={userEmail} logout={logout} />
+            ) : (
+              <AuthLinks pathname={pathname} />
+            )}
           </div>
           <div className={cn(classes.headerLinks)}>
             <NavLinks pathname={pathname} links={links} />
           </div>
         </nav>
-        <button type='button' onClick={toggleNavBar} className={cn(classes.headerBurger)}></button>
+        <button
+          type="button"
+          onClick={toggleNavBar}
+          className={cn(classes.headerBurger)}
+        ></button>
       </div>
       <NavBar isOpen={isOpenNavBar} toggle={toggleNavBar}>
         <>
-          {userEmail ? <UserInfo email={userEmail} logout={logout}  /> : <AuthLinks pathname={pathname} toggle={toggleNavBar} />}
+          {userEmail ? (
+            <UserInfo email={userEmail} logout={logout} />
+          ) : (
+            <AuthLinks pathname={pathname} toggle={toggleNavBar} />
+          )}
           <NavLinks pathname={pathname} links={links} toggle={toggleNavBar} />
         </>
       </NavBar>
