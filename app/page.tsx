@@ -11,7 +11,7 @@ import rect3 from '@/assets/images/Rectangle3.png'
 const Home: React.FC = () => {
   const postsLink = {
     text: 'View all',
-    href: '/all-posts'
+    href: '/'
   }
 
   const posts = [
