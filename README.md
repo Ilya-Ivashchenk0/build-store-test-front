@@ -1,5 +1,7 @@
 Для разработки и запуска использовал node - 18.19.0
 
+команда для запуска в локальном режиме - npm run dev
+
 # build-store-test-front
 
 Тестовое задание выполнено на фреймворке Next.js.
@@ -27,6 +29,3 @@ https://www.figma.com/file/u96UjK2Kzo2bk0PhVdL5xr/John-%2B?type=design&node-id=0
 Backend https://api.build-store-test.test-tasks.ru
 
 Frontend https://build-store-test.test-tasks.ru
-
-Оценка производительности Lighthouse:
-![image](https://github.com/Ilya-Ivashchenk0/build-store-test-front/assets/120082609/6268dd00-5e7e-4907-99af-452ee26f5199)
