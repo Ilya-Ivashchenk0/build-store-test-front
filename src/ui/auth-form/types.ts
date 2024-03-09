@@ -1,6 +1,7 @@
-import { SetStateAction } from 'react'
+import { DetailedHTMLProps, HTMLAttributes } from 'react'
 
-export interface authFormProps {
+export interface authFormProps
+  extends DetailedHTMLProps<HTMLAttributes<HTMLDivElement>, HTMLDivElement> {
   email: string
   changeEmail: (e: React.ChangeEvent<HTMLInputElement>) => void
   emailError: string | undefined

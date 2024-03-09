@@ -1,4 +1,5 @@
 import { StaticImageData } from 'next/image'
+import { DetailedHTMLProps, HTMLAttributes } from 'react'
 
 interface Work {
   img: StaticImageData
@@ -8,7 +9,8 @@ interface Work {
   subtitle: string
 }
 
-export interface worksProps {
+export interface worksProps
+  extends DetailedHTMLProps<HTMLAttributes<HTMLDivElement>, HTMLDivElement> {
   heading: string
   works: Work[]
 }

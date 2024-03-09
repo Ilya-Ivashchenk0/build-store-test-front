@@ -46,7 +46,7 @@ export const Header: React.FC<headerProps> = ({ links }) => {
         </nav>
         <button
           type="button"
-          name='burger'
+          name="burger"
           onClick={toggleNavBar}
           className={cn(classes.headerBurger)}
         ></button>

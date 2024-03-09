@@ -14,7 +14,13 @@ export const Promo: React.FC<promoProps> = ({
       <div className={cn(classes.promoWrapper)}>
         <h1 className={cn(classes.promoHeading)}>{heading}</h1>
         <p className={cn(classes.promoParagraph)}>{paragraph}</p>
-        <button type='button' name='download resume' className={cn(classes.promoButton)}>{buttonText}</button>
+        <button
+          type="button"
+          name="download resume"
+          className={cn(classes.promoButton)}
+        >
+          {buttonText}
+        </button>
       </div>
       <Image
         priority
