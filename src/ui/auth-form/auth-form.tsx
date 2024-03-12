@@ -27,12 +27,14 @@ export const AuthForm: React.FC<authFormProps> = ({
         changeValue={changeEmail}
         errorValue={emailError}
         name="email"
+        required
       />
       <Input
         value={password}
         changeValue={changePassword}
         errorValue={passwordError}
         name="password"
+        required
       />
       <button
         className={cn(classes.authFormButton, {
