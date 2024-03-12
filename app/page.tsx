@@ -1,9 +1,9 @@
 import classes from './styles.module.scss'
 import cn from 'classnames'
 import { Promo } from '@/ui/promo'
-import { Posts } from '@/ui/posts'
+import { PostList } from '@/ui/post-list'
 import promoImg from '@/assets/images/promoImage.png'
-import { Works } from '@/ui/works'
+import { WorkList } from '@/ui/work-list'
 import rect1 from '@/assets/images/Rectangle1.png'
 import rect2 from '@/assets/images/Rectangle2.png'
 import rect3 from '@/assets/images/Rectangle3.png'
@@ -62,13 +62,14 @@ const Home: React.FC = () => {
     <main className={cn(classes.main)}>
       <div className={cn(classes.mainWrapper)}>
         <Promo
+          className='promo'
           heading={`Hi, I am John, \n Creative Technologist`}
           paragraph="Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet."
           imgSrc={promoImg}
           buttonText="Download Resume"
         />
-        <Posts heading="Recent posts" link={postsLink} posts={posts} />
-        <Works heading="Featured works" works={workList} />
+        <PostList heading="Recent posts" link={postsLink} posts={posts} />
+        <WorkList className='workList' heading="Featured works" works={workList} />
       </div>
     </main>
   )

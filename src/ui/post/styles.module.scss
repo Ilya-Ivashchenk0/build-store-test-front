@@ -1,0 +1,99 @@
+.post {
+  margin: 0;
+  padding: 26px 21px 7px 23px;
+  max-width: 418px;
+  background-color: var(--white-color);
+  display: flex;
+  flex-direction: column;
+  border: none;
+  border-radius: 4px;
+  box-shadow: 0px 4px 10px 0px rgba(187, 225, 250, 0.25);
+}
+
+@media screen and (min-width: 375px) and (max-width: 899px) {
+  .post {
+    max-width: 316px;
+    padding: 10px 19px 20px 19px;
+  }
+}
+
+.postTitle {
+  margin: 0;
+  padding: 0;
+  color: var(--dark-color);
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 38.19px;
+}
+
+@media screen and (min-width: 375px) and (max-width: 899px) {
+  .postTitle {
+    font-size: 22px;
+    line-height: 30px;
+  }
+}
+
+.postInfoWrapper {
+  margin: 27px 0 25px 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  color: var(--dark-color);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 26.44px;
+}
+
+@media screen and (min-width: 375px) and (max-width: 899px) {
+  .postInfoWrapper {
+    font-size: 16px;
+    line-height: 23.5px;
+    margin: 12px 0 19px 0;
+  }
+}
+
+.postDate {
+  margin: 0;
+  padding: 0;
+  max-height: 21px;
+}
+
+@media screen and (min-width: 375px) and (max-width: 899px) {
+  .postDate {
+    max-height: 24px;
+  }
+}
+
+.postInfo {
+  margin: 0 0 0 32px;
+  padding: 0 0 0 24px;
+  max-height: 21px;
+  border-left: 1.5px solid black;
+}
+
+@media screen and (min-width: 375px) and (max-width: 899px) {
+  .postInfo {
+    margin: 0 0 0 24px;
+    padding: 0 0 0 24px;
+    max-height: 24px;
+    border-left: 2px solid black;
+  }
+}
+
+.postSubtitle {
+  margin: 0 0 22px 0;
+  padding: 0;
+  max-width: 95%;
+  color: var(--dark-color);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 23.5px;
+}
+
+@media screen and (min-width: 375px) and (max-width: 899px) {
+  .postSubtitle {
+    margin: 0;
+    max-width: 99.5%;
+    line-height: 24px;
+  }
+}

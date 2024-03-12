@@ -4,27 +4,28 @@ import cn from 'classnames'
 import classes from './styles.module.scss'
 
 export const Promo: React.FC<promoProps> = ({
+  className,
   heading,
   paragraph,
   imgSrc,
   buttonText
 }) => {
   return (
-    <section className={cn(classes.promo)}>
-      <div className={cn(classes.promoWrapper)}>
-        <h1 className={cn(classes.promoHeading)}>{heading}</h1>
-        <p className={cn(classes.promoParagraph)}>{paragraph}</p>
+    <section className={cn(className, classes.promo)}>
+      <div className={cn(className, classes.promoWrapper)}>
+        <h1 className={cn(className, classes.promoHeading)}>{heading}</h1>
+        <p className={cn(className, classes.promoParagraph)}>{paragraph}</p>
         <button
           type="button"
           name="download resume"
-          className={cn(classes.promoButton)}
+          className={cn(className, classes.promoButton)}
         >
           {buttonText}
         </button>
       </div>
       <Image
         priority
-        className={cn(classes.promoImg)}
+        className={cn(className, classes.promoImg)}
         src={imgSrc}
         alt={heading}
       />
