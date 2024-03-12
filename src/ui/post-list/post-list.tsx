@@ -15,9 +15,10 @@ export const PostList: React.FC<postsProps> = ({ heading, link, posts }) => {
           </Link>
         </div>
         <div className={cn(classes.postsPostWrapper)}>
-          {posts && posts.map((post, index) => (
-            <Post className='post' key={index} post={post} />
-          ))}
+          {posts &&
+            posts.map((post, index) => (
+              <Post className="post" key={index} post={post} />
+            ))}
         </div>
       </div>
     </section>

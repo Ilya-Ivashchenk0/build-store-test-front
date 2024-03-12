@@ -62,14 +62,18 @@ const Home: React.FC = () => {
     <main className={cn(classes.main)}>
       <div className={cn(classes.mainWrapper)}>
         <Promo
-          className='promo'
+          className="promo"
           heading={`Hi, I am John, \n Creative Technologist`}
           paragraph="Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet."
           imgSrc={promoImg}
           buttonText="Download Resume"
         />
         <PostList heading="Recent posts" link={postsLink} posts={posts} />
-        <WorkList className='workList' heading="Featured works" works={workList} />
+        <WorkList
+          className="workList"
+          heading="Featured works"
+          works={workList}
+        />
       </div>
     </main>
   )
