@@ -4,10 +4,11 @@
   position: relative;
   width: 100%;
   background-color: var(--white-color);
+  border: none;
   border-radius: 8px;
   display: flex;
   justify-content: center;
-  transition: border 0.5s ease;
+  transition: border 1s ease;
 
   &.valid {
     border: 1px solid rgba(0, 168, 204, 1);

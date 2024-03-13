@@ -14,21 +14,32 @@ export const Input: React.FC<inputProps> = ({
   required
 }) => {
   const [focus, setFocus] = useState(false)
-  console.log(value)
 
   return (
     <>
-      <div className={cn(className, classes.inputWrapper, {
-        [classes.valid]: !errorValue && value !== ''
-      }, {
-        [classes.noValid]: errorValue && errorValue !== ''
-      })}>
+      <div
+        className={cn(
+          className,
+          classes.inputWrapper,
+          {
+            [classes.valid]: !errorValue && value !== ''
+          },
+          {
+            [classes.noValid]: errorValue && errorValue !== ''
+          }
+        )}
+      >
         <label
-          className={cn(className, classes.inputLabel, {
-            [classes.onFocus]: focus || value !== ''
-          }, {
-            [classes.required]: required
-          })}
+          className={cn(
+            className,
+            classes.inputLabel,
+            {
+              [classes.onFocus]: focus || value !== ''
+            },
+            {
+              [classes.required]: required
+            }
+          )}
           htmlFor={name}
         >
           {`${name.charAt(0).toUpperCase()}${name.slice(1)}:`}
@@ -45,9 +56,11 @@ export const Input: React.FC<inputProps> = ({
           onFocus={() => setFocus(true)}
           onBlur={() => setFocus(false)}
         />
-        <span className={cn(className, {
-          [classes.inputCheckbox]: !errorValue && value !== ''
-        })}></span>
+        <span
+          className={cn(className, {
+            [classes.inputCheckbox]: !errorValue && value !== ''
+          })}
+        ></span>
       </div>
       <span className={cn(className, classes.inputError)}>{errorValue}</span>
     </>
